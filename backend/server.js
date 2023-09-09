@@ -10,8 +10,10 @@ const port = 5000; // Replace with your desired port number
 
 // Enable CORS
 // Allow requests from your frontend domain
+// Allow requests from your frontend domain
 const corsOptions = {
   origin: 'https://login-site-frontend.vercel.app',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify the allowed HTTP methods
   optionsSuccessStatus: 200, // Some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 
