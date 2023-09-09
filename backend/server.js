@@ -9,7 +9,14 @@ const app = express();
 const port = 5000; // Replace with your desired port number
 
 // Enable CORS
-app.use(cors());
+// Allow requests from your frontend domain
+const corsOptions = {
+  origin: 'https://login-site-frontend.vercel.app',
+  optionsSuccessStatus: 200, // Some legacy browsers (IE11, various SmartTVs) choke on 204
+};
+
+app.use(cors(corsOptions));
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
