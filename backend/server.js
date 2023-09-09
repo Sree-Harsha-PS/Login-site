@@ -10,24 +10,17 @@ const port = 5000; // Replace with your desired port number
 
 // Enable CORS
 // Allow requests from your frontend domain
-// const corsOptions = {
-//   origin: 'https://login-site-frontend.vercel.app', // Replace with your frontend URL
-//   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify the allowed HTTP methods
-//   allowedHeaders: [
-//     'Origin',
-//     'X-Requested-With',
-//     'Content-Type',
-//     'Accept',
-//     'Authorization', // Add any other headers you need
-//   ],
-//   credentials: true, // Enable credentials (e.g., cookies)
-// };
+const corsOptions = {
+  origin: 'https://login-site-frontend.vercel.app', // Replace with your frontend URL
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify the allowed HTTP methods
+  credentials: true, // Enable credentials (e.g., cookies)
+};
 
-// app.use(cors(corsOptions));
+app.use(cors(corsOptions));
 
-app.use(cors({
-  origin: 'https://login-site-frontend.vercel.app'
-}));
+// app.use(cors({
+//   origin: 'https://login-site-frontend.vercel.app'
+// }));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
