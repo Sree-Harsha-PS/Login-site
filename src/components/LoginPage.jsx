@@ -20,7 +20,7 @@ const LoginPage = () => {
 
     try {
       // Make a POST request to the server to authenticate the user
-      const response = await axios.post('http://localhost:5000/api/login', {
+      const response = await axios.post(`${process.env.REACT_APP_BASE_URL}/api/login`, {
         email,
         password,
       });
