@@ -28,6 +28,7 @@ const port = 5000; // Replace with your desired port number
 app.use(cors({
   origin: 'https://login-site-frontend.vercel.app'
 }));
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
