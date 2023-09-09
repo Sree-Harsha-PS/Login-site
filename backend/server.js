@@ -13,7 +13,7 @@ const port = 5000; // Replace with your desired port number
 const corsOptions = {
   origin: 'https://login-site-frontend.vercel.app', // Replace with your frontend URL
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify the allowed HTTP methods
-  credentials: true, // Enable credentials (e.g., cookies)
+  optionsSuccessStatus: 200,// Enable credentials (e.g., cookies)
 };
 
 app.use(cors(corsOptions));
