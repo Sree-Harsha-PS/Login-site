@@ -1,0 +1,467 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.logo {
+  height: 40px;
+  width: 180px;
+  float: left;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #dde6ed;
+  padding: 10px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.sinup,
+.loginn,
+.request-demo-button {
+  padding: 15px 30px;
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+.request-demo-button {
+  background: #34aad9;
+  background-image: -webkit-linear-gradient(top, #34aad9, #2980b9);
+  background-image: -moz-linear-gradient(top, #34aad9, #2980b9);
+  background-image: -ms-linear-gradient(top, #34aad9, #2980b9);
+  background-image: -o-linear-gradient(top, #34aad9, #2980b9);
+  background-image: linear-gradient(to bottom, #34aad9, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.request-demo-button:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2%;
+  margin: 8%;
+}
+
+.card {
+  background-color: #daf5ff;
+  border: 2px solid #000;
+  margin: 10px;
+  padding: 1.5%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  width: 40%;
+  font-size: 22px;
+}
+
+.card ul {
+  margin-top: 8px;
+  padding-right: 25%;
+}
+.card li {
+  margin-bottom: 5px;
+}
+
+.content {
+  flex: 1;
+  flex-direction: column;
+  /* Adjust the spacing as needed */
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 18px;
+  text-align: center;
+  line-height: 1.5;
+  width: 100%;
+  font-size: 18px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.left-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 10%;
+}
+
+.footer-text {
+  margin-right: 10px;
+  margin-bottom: 10px; /* Adjust the spacing between lines as needed */
+}
+
+
+
+/* Signup */
+
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 90vh;
+  margin-top: auto;
+  padding-top: 2%;
+}
+
+.signup-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 2%;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  justify-content: space-between;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12%;
+  width: 80%;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+}
+
+.tnc {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  width: 100%;
+  flex-direction: row;
+}
+
+.tnc input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.tnc label {
+  color: #555;
+  font-size: 16px;
+}
+
+
+.sbutton {
+  margin-top: auto;
+  padding: 20px 40px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  align-self: center;
+  margin-bottom: 2%;
+  font-family: Arial, sans-serif;
+}
+
+.btn-signup{
+  padding: 15px 40px;
+  margin-bottom: 1.5%;
+}
+
+.button-container{
+  align-self: center;
+  margin:auto;
+  padding: auto;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  form {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+.subm-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  text-align: center; /* Added to center align the elements */
+  width: auto;
+}
+
+.signup-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 4%;
+}
+
+.log-field {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center; /* Align items to the start of the flex container */
+  width: 40%; /* Added to occupy the full width */
+
+}
+
+.log-field label {
+  margin-right: 2%;
+}
+
+.log-field input[type="email"],
+.log-field input[type="password"] {
+  display: flex;
+  flex: 1;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  box-sizing: border-box; /* Add this line to include padding and border in the element's total width */
+}
+
+.log-field input[type="email"] {
+  margin-right: 2%; /* Add this line to create equal spacing between inputs */
+}
+
+
+
+.centrepage {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center; 
+}
+
+.login-btn{
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #4cf;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #79E0EE;
+}
+
+.image {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 200px; /* Adjust the width of the logo image as needed */
+}
+
+.beta {
+  width: 80px; /* Adjust the width of the beta image as needed */
+  margin-bottom: 16px; /* Add some space between the logo and beta image */
+}
+
+/* popup - css */
+
+/* styles.css */
+/* styles.css */
+/* styles.css */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup.failure button {
+  padding: 6px 12px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: smaller
+}
+
+.popup.failure button:hover {
+  background-color: #c3ddf2;
+  margin-left: 2px;
+}
+
+.popup.success {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #dff0d8;
+  color: #3c763d;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.social-icons {
+  display: flex;
+  align-items: space-between;
+  color: #34aad9;
+}
+
+.social-icons a {
+  margin-right: 50px;
+  font-size: 24px;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
+.dashboard{
+  height: 80vh;
+  width: 100%;
+}
+
+.social-icons a:visited { 
+  text-decoration: none; 
+  color: #34aad9;
+ }
+
+ /*menu-bar*/
+
+ .menu-bar {
+  background-color: lightblue;
+  color: darkblue;
+  width: 250px;
+  height: 80vh; /* Adjust the value based on the combined height of the header and footer */
+  position: absolute;
+  left: 0;
+  top: 150px; /* Adjust the value based on the header height */
+  bottom: 100px; /* Adjust the value based on the footer height */
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  border-bottom: 1px solid darkblue;
+}
+
+.menu-item-btm {
+  display: flex;
+  align-items: center;
+  padding: 36px;
+}
+
+.menu-text {
+  margin-left: 25px;
+}
+
+.dashboard {
+  margin-left: 250px; /* Adjust this value based on the menu bar width */
+  padding: 20px;
+}
+
+.d-content {
+  margin-left: 250px; /* Adjust this value based on the menu bar width */
+  padding: 20px;
+  margin-bottom: 100px; /* Adjust this value based on the footer height */
+}
+
+.search-icon{
+  top: 20px;
+  padding-top: 15px;
+  bottom: 20px;
+}
