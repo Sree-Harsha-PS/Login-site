@@ -25,7 +25,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 app.use(cors({
-  origin: 'https://yourdeployedsite.com'
+  origin: 'https://login-site-frontend.vercel.app'
 }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
