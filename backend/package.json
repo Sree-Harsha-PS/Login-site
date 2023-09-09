@@ -1,0 +1,22 @@
+{
+    "name": "gtm4health-backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "dependencies": {
+      "bcrypt": "^5.1.1",
+      "cors": "^2.8.5",
+      "dotenv": "^16.1.4",
+      "express": "^4.18.2",
+      "jsonwebtoken": "^9.0.2",
+      "loader-utils": "3.2.1",
+      "mongoose": "^7.2.3",
+      "object-inspect": "^1.12.3",
+      "qs": "^6.11.2"
+    },
+    "scripts": {
+      "start": "node server.js", 
+      "build": "echo 'No build step required for the backend'"
+    }
+  }
+  
