@@ -1,6 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const User = require('../models/user');
+const cors = require('cors'); // Import the cors middleware
+
+// Enable CORS for your route
+router.use(cors());
 
 
 router.post('/', async (req, res) => {
