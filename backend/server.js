@@ -10,7 +10,6 @@ const port = 5000; // Replace with your desired port number
 
 // Enable CORS
 // Allow requests from your frontend domain
-
 const corsOptions = {
   origin: 'https://login-site-frontend.vercel.app',
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
@@ -19,22 +18,9 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
-
-// app.use(cors({
-//   origin: 'https://login-site-frontend.vercel.app'
-// }));
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use(function (req, res, next) {
-  //Enabling CORS
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, x-client-key, x-client-token, x-client-secret, Authorization");
-    next();
- });
- app.options('*', cors(corsOptions)) // include before other routes
 // Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
