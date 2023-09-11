@@ -9,9 +9,11 @@ import Terms from './Terms';
 import Privacy from './Privacy';
 import SettingsPage from './Settings';
 import HelpPage from './Help';
+import axios from 'axios';
 //import PrivateRoute from './components/Privateroute';
 
 export default function App() {
+  axios.defaults.withCredentials = true;
   return (
     <Router>
       <Routes>
